@@ -52,21 +52,10 @@ agent {
             }
             
         }
-        
-        stage('Stage 2') {
-            steps {
-                echo 'Stage2 Hello world!'  
-                echo  'Stage2 $date'
-               
-            }
-            
-        }
-        
-        
-        stage('Stage 3') {
+        stage('finish') {
             steps {
                 echo 'Welcome to Stage3 '  
-                echo  'Stage3 '
+                echo  'finish '
             }
             
         }           
