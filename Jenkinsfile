@@ -44,6 +44,8 @@ agent {
       //   }
      // }
 stage("Quality Gate"){
+    steps{
+        
           timeout(time: 1, unit: 'HOURS') {
               def qg = waitForQualityGate()
               if (qg.status != 'OK') {
@@ -51,6 +53,7 @@ stage("Quality Gate"){
               }
           }
       }   
+}
         stage('Build') {
             steps {
                 sh 'mvn clean package'
