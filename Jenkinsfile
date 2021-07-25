@@ -6,10 +6,10 @@ agent {
     }
   }
   
-      //tools {
+      tools {
 
-      //  maven 'maven-3.8.1'
-  //  }
+        maven 'maven-3.8.1'
+   }
     
     stages {
         
