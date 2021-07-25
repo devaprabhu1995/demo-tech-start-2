@@ -38,7 +38,7 @@ agent {
          stage("Quality Gate") {
          steps {
          //timeout(time: 10, unit: 'MINUTES') {
-             waitForQualityGate(webhookSecretId: 'sonarqube-id') 
+            // waitForQualityGate(webhookSecretId: 'sonarqube-id') 
                waitForQualityGate abortPipeline: true
      //  }
          }
