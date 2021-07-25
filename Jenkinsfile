@@ -22,7 +22,7 @@ agent {
         
     stage('SonarQube Analysis') {
       environment {
-        SCANNER_HOME = tool 'sonarqube-4.6.2'
+        SCANNER_HOME = tool 'Sonar'
         ORGANIZATION = "sonarqube-pipeline"
         PROJECT_NAME = "sonarqube-pipeline"
       }
